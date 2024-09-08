@@ -5,79 +5,104 @@
     box-sizing: border-box;
 }
 
-/* body 스타일 */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #e0f7fa; /* 스카이 블루 배경 */
     color: #333;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
 }
 
 /* 헤더 스타일 */
 header {
-    background: #333;
+    background-color: #81d4fa; /* 스카이 블루 */
     color: #fff;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-/* 네비게이션 스타일 */
 nav ul {
     list-style: none;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin-right: 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    padding: 5px 10px;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #4dd0e1; /* 더 진한 스카이 블루 */
+    border-radius: 5px;
 }
 
-/* 메인 콘텐츠 스타일 */
+/* 메인 섹션 스타일 */
 main {
-    margin-top: 20px;
+    margin-top: 100px;
+    padding: 20px;
 }
 
-/* 섹션 스타일 */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
 section {
-    margin-bottom: 40px;
-    background-color: #fff;
+    margin: 50px 0;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* 하얀색 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* 연한 초록색 강조 */
+section p {
+    color: #81c784; /* 연한 초록색 */
 }
 
 /* 푸터 스타일 */
 footer {
+    background-color: #81d4fa; /* 스카이 블루 */
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
+    padding: 20px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-/* 반응형 디자인을 위한 미디어 쿼리 */
+/* 반응형 디자인 */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
@@ -88,11 +113,11 @@ footer {
         margin-bottom: 10px;
     }
 
-    nav ul li a {
-        font-size: 1rem;
+    .hero h2 {
+        font-size: 2rem;
     }
 
     section h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }

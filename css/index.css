@@ -60,19 +60,30 @@ main {
 }
 
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background-color: #81d4fa; /* 스카이 블루 배경 */
     height: 400px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
+    position: relative;
 }
 
 .hero h2 {
     font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 그림자 추가 */
 }
 
+.hero p {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* 섹션 스타일 */
 section {
     margin: 50px 0;
     padding: 20px;
@@ -84,11 +95,6 @@ section {
 section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-}
-
-/* 연한 초록색 강조 */
-section p {
-    color: #81c784; /* 연한 초록색 */
 }
 
 /* 푸터 스타일 */

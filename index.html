@@ -4,48 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Questionalist - 소개</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/about.css"> <!-- 추가된 스타일시트 -->
+    <title>Questionalist</title>
+    <link rel="icon" href="image/my_logo.jpg" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Questionalist</h1>
+        <h1>
+            <img src="image/my_logo.jpg" alt="" width="5%">
+        </h1>
         <nav>
             <ul>
                 <li><a href="index.html">홈</a></li>
                 <li><a href="html/about.html">소개</a></li>
-                <li><a href="services.html">서비스</a></li>
+                <li><a href="#services">서비스</a></li>
                 <li><a href="html/contact.html">연락처</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <section id="home" class="hero">
+            <h2>환영합니다!</h2>
+            <p>최고의 정보를 제공하는 Questionalist에 오신것을 환영합니다.</p>
+        </section>
+
         <section id="about">
             <h2>소개</h2>
-            <p>내가 본 강의, 내가 읽은 책, 내가 사용 가능한 기술을 아래에서 확인해보세요.</p>
-
-            <div class="card-container">
-                <!-- 첫 번째 카드: 내가 본 강의 -->
-                <div class="card">
-                    <h3>내가 본 강의</h3>
-                    <p>여기에 수강한 강의 목록이나 관련 설명을 넣을 수 있습니다.</p>
-                </div>
-
-                <!-- 두 번째 카드: 내가 읽은 책 -->
-                <div class="card">
-                    <h3>내가 읽은 책</h3>
-                    <p>여기에 읽은 책 목록이나 관련 설명을 넣을 수 있습니다.</p>
-                </div>
-
-                <!-- 세 번째 카드: 내가 사용 가능한 기술 -->
-                <div class="card">
-                    <h3>내가 사용 가능한 기술</h3>
-                    <p>여기에 사용할 수 있는 기술 목록이나 관련 설명을 넣을 수 있습니다.</p>
-                </div>
-            </div>
+            <p>Questionalist는 당신의 호기심을 채워 줄 지식과 정보를 제공하는 웹사이트입니다.</p>
         </section>
+
+        <section id="services">
+            <h2>서비스</h2>
+            <p>우리는 다양한 서비스를 제공하며, 당신의 필요를 충족시키기 위해 노력합니다.</p>
+        </section>
+
+        <a href="html/contact.html">
+            <section id="contact">
+                <h2>연락처</h2>
+                <p>질문이 있거나 문의 사항이 있으시면 연락주세요.</p>
+            </section>
+        </a>
     </main>
 
     <footer>

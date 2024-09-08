@@ -1,0 +1,55 @@
+/* 기술 카드 레이아웃 */
+.skill-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* 숙련도 표시 바 */
+.skill-level {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    height: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar {
+    background-color: #4caf50; /* 숙련도 색상 */
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .skill-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+}

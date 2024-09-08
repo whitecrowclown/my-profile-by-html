@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Questionalist - 연락처</title>
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="icon" href="../image/my_logo.jpg" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css"> <!-- 추가된 스타일시트 -->
 </head>
 <body>
     <header>
-        <h1>
-            <img src="../image/my_logo.jpg" alt="" width="5%">
-        </h1>
+        <h1>Questionalist</h1>
         <nav>
             <ul>
-                <li><a href="../index.html">홈</a></li>
+                <li><a href="home.html">홈</a></li>
                 <li><a href="about.html">소개</a></li>
                 <li><a href="services.html">서비스</a></li>
                 <li><a href="contact.html">연락처</a></li>
@@ -28,17 +26,17 @@
             <h2>연락처</h2>
             <p>질문이 있거나 궁금한 점이 있다면 아래 연락처로 연락해 주세요.</p>
 
-            <form action="submit_form.php" method="POST">
-                <label for="name">이름:</label>
+            <form action="submit_form.php" method="POST" class="contact-form">
+                <label for="name"><i class="fa fa-user"></i> 이름:</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">이메일:</label>
+                <label for="email"><i class="fa fa-envelope"></i> 이메일:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="message">메시지:</label>
+                <label for="message"><i class="fa fa-comment"></i> 메시지:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <button type="submit">보내기</button>
+                <button type="submit" class="btn-submit">보내기</button>
             </form>
         </section>
     </main>

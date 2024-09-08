@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Questionalist - 소개</title>
+    <title>Questionalist - 강의</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/about.css"> <!-- 추가된 스타일시트 -->
+    <link rel="stylesheet" href="../css/courses.css"> <!-- 추가된 스타일시트 -->
 </head>
 <body>
     <header>
@@ -14,49 +14,46 @@
         <nav>
             <ul>
                 <li><a href="../index.html">홈</a></li>
-                <li class="dropdown">
-                    <a href="about.html">소개</a>
-                    <ul class="dropdown-content">
-                        <li><a href="skills.html">기술 및 스펙</a></li>
-                    </ul>
-                </li>
-                <li><a href="services.html">서비스</a></li>
+                <li><a href="about.html">소개</a></li>
                 <li><a href="contact.html">연락처</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="about">
-            <h2>소개</h2>
-            <p>내가 본 강의, 내가 읽은 책, 내가 사용 가능한 기술을 아래에서 확인해보세요.</p>
+        <section id="courses">
+            <h2>저는 이런 사람입니다.</h2>
 
-            <div class="card-container">
-                <!-- 첫 번째 카드: 내가 본 강의 -->
-                 <a href="courses.html">
-                    <div class="card">
-                        <h3>강의</h3>
-                        <p>강의에 대한 감상평이 있습니다.</p>
-                    </div>
-                 </a>
+            <div class="course-container">
+                <!-- 첫 번째 강의 카드 -->
+                <div class="course-card">
+                    <h3>강의</h3>
+                    <p>제가 지금까지 들어온 강의 목록입니다.</p>
+                    <a href="https://example.com" target="_blank">강의 링크</a>
+                </div>
 
-                <!-- 두 번째 카드: 내가 읽은 책 -->
-                <div class="card">
+                <!-- 두 번째 강의 카드 -->
+                <div class="course-card">
                     <h3>독서</h3>
-                    <p>독서에 대한 감상평이 있습니다.</p>
+                    <p>제가 지금까지 본 독서 목록입니다.</p>
+                    <a href="https://example.com" target="_blank">강의 링크</a>
                 </div>
 
-                <!-- 세 번째 카드: 내가 사용 가능한 기술 -->
-                <div class="card">
+                <!-- 세 번째 강의 카드 -->
+                <div class="course-card">
                     <h3>구현</h3>
-                    <p>구현해 본 프로젝트들이 있습니다.</p>
+                    <p>제가 지금까지 해본 구현 목록입니다.</p>
+                    <a href="https://example.com" target="_blank">강의 링크</a>
+                </div>
+                
+                <!-- 네 번째 강의 카드 -->
+                <div class="course-card">
+                    <h3>게임</h3>
+                    <p>제가 지금까지 플레이한 게임 목록입니다.</p>
+                    <a href="https://example.com" target="_blank">강의 링크</a>
                 </div>
 
-                <!-- 네 번째 카드: 내가 사용 가능한 기술 -->
-                <div class="card">
-                    <h3>게임</h3>
-                    <p>플레이 해본 게임들이 있습니다.</p>
-                </div>
+                <!-- 추가적인 강의 카드 추가 가능 -->
             </div>
         </section>
     </main>

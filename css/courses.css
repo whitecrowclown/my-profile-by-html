@@ -61,15 +61,14 @@ p {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .course-card a:hover {
-    background-color: #388e3c;
+    background-color: skyblue;
 }
 
 /* 반응형 디자인 */

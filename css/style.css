@@ -15,21 +15,32 @@ body {
 }
 
 /* 헤더 스타일 */
+/* 헤더 스타일 */
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #81d4fa; /* 스카이 블루 */
     color: #fff;
     padding: 20px;
-    text-align: center;
-    position: fixed;
     width: 100%;
     top: 0;
+    position: fixed;
     z-index: 1000;
 }
 
 header h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin: 0; /* 로고 주변의 여백 제거 */
+    display: flex;
+    align-items: center;
 }
+
+header h1 img {
+    width: 50px; /* 적절한 크기로 로고 사이즈 조정 */
+    margin-right: 10px; /* 로고와 텍스트 간격 */
+}
+
 
 nav ul {
     list-style: none;

@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Questionalist - 강의</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/courses.css"> <!-- 추가된 스타일시트 -->
+    <title>Kospi & Kosdaq 정보</title>
+    <link rel="stylesheet" href="../css/common.css"> <!-- 기본 CSS -->
+    <link rel="stylesheet" href="../css/kospi_kosdaq.css"> <!-- 코스피 & 코스닥 전용 CSS -->
 </head>
 <body>
-    <header>
-        <a href="../index.html">
-            <img src="../image/my_logo.jpg" alt="" width="5%">
-        </a>
+    <!-- 기존 사이트의 기본 네비게이션이 여기에 들어갈 것입니다 -->
         <nav>
             <ul>
                 <li><a href="../index.html">홈</a></li>
@@ -20,54 +17,122 @@
                 <li><a href="contact.html">연락처</a></li>
             </ul>
         </nav>
-    </header>
+    <!-- 검색 바 -->
+    <div class="search-bar">
+        <input type="text" placeholder="기업명 또는 주식 코드를 입력하세요">
+        <button type="button">검색</button>
+    </div>
 
-    <main>
-        <section id="courses">
-            <h2>포트폴리오</h2>
-            <p>다음은 제 포트폴리오 입니다.</p>
+    <!-- 작은 네비게이션 (서브 네비게이션) -->
+    <nav class="sub-nav">
+        <ul>
+            <li><a href="#kospi">코스피</a></li>
+            <li><a href="#kosdaq">코스닥</a></li>
+            <li><a href="#new-listing">신규 상장</a></li>
+        </ul>
+    </nav>
 
-            <div class="course-container">
-                <!-- 첫 번째 강의 카드 -->
-                <div class="course-card">
-                    <h3>MP4 To Wav</h3>
-                    <p>영상 파일을 음성 파일로 변환하는 파이썬 파일입니다.</p>
-                    <a href="https://example.com" target="_blank">Git Hub</a>
-                </div>
+    <!-- 코스피 섹션 -->
+    <section id="kospi">
+        <h2>코스피 정보</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>종목명</th>
+                        <th>종목 코드</th>
+                        <th>현재가</th>
+                        <th>등락률</th>
+                        <th>거래량</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>삼성전자</td>
+                        <td>005930</td>
+                        <td>72,000</td>
+                        <td>+1.25%</td>
+                        <td>10,500,000</td>
+                    </tr>
+                    <tr>
+                        <td>SK하이닉스</td>
+                        <td>000660</td>
+                        <td>92,000</td>
+                        <td>-0.75%</td>
+                        <td>4,500,000</td>
+                    </tr>
+                    <!-- 더 많은 데이터 추가 가능 -->
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-                <!-- 두 번째 강의 카드 -->
-                <div class="course-card">
-                    <h3>Wav split & STT</h3>
-                    <p>음성을 나누고 자막을 만들어본 파이썬 파일입니다.</p>
-                    <a href="https://example.com" target="_blank">Git Hub</a>
-                </div>
+    <!-- 코스닥 섹션 -->
+    <section id="kosdaq">
+        <h2>코스닥 정보</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>종목명</th>
+                        <th>종목 코드</th>
+                        <th>현재가</th>
+                        <th>등락률</th>
+                        <th>거래량</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>셀트리온헬스케어</td>
+                        <td>091990</td>
+                        <td>85,000</td>
+                        <td>+0.50%</td>
+                        <td>2,300,000</td>
+                    </tr>
+                    <tr>
+                        <td>카카오게임즈</td>
+                        <td>293490</td>
+                        <td>62,500</td>
+                        <td>-1.10%</td>
+                        <td>1,200,000</td>
+                    </tr>
+                    <!-- 더 많은 데이터 추가 가능 -->
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-                <!-- 세 번째 강의 카드 -->
-                <div class="course-card">
-                    <h3>스도쿠 풀이</h3>
-                    <p>스도쿠 게임의 정답을 알아내는 파이썬 파일입니다.</p>
-                    <a href="https://github.com/whitecrowclown/Game-Player" target="_blank">Git Hub</a>
-                </div>
+    <!-- 신규 상장 섹션 -->
+    <section id="new-listing">
+        <h2>신규 상장</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>종목명</th>
+                        <th>종목 코드</th>
+                        <th>상장일</th>
+                        <th>상장가</th>
+                        <th>현재가</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>오아시스</td>
+                        <td>405400</td>
+                        <td>2024-03-15</td>
+                        <td>30,000</td>
+                        <td>35,000</td>
+                    </tr>
+                    <!-- 더 많은 데이터 추가 가능 -->
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-                <!-- 네 번째 강의 카드 -->
-                <div class="course-card">
-                    <h3>HTML & CSS & Git Pages</h3>
-                    <p>지금 여러분들이 보고 계시는 화면을 제작했습니다.</p>
-                    <a href="https://github.com/whitecrowclown/my-profile-by-html" target="_blank">Git Hub</a>
-                </div>
-
-                <!-- 다섯 번째 강의 카드 -->
-                <div class="course-card">
-                    <h3>Kospi & Kosdaq</h3>
-                    <p>코스피와 코스닥에 대한 정보입니다.</p>
-                    <a href="https://github.com/whitecrowclown/my-profile-by-html" target="_blank">Git Hub</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
+    <!-- 푸터 -->
     <footer>
-        <p>&copy; 2024 Questionalist. 모든 권리 보유.</p>
+        <p>&copy; 2024 Kospi & Kosdaq 정보 사이트. 모든 권리 보유.</p>
     </footer>
 </body>
 </html>

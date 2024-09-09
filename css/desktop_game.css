@@ -20,7 +20,7 @@ p {
     margin-bottom: 40px;
 }
 
-/* 강의 카드 레이아웃 */
+/* 게임 카드 레이아웃 */
 .course-container {
     display: flex;
     flex-wrap: wrap;

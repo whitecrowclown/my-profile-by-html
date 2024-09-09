@@ -1,9 +1,31 @@
+/* 전체 레이아웃 스타일 */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 /* 연락처 폼 스타일 */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
+    background-color: #ffffff;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -18,8 +40,8 @@
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
@@ -28,14 +50,14 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #4dd0e1; /* 스카이 블루 */
+    border-color: #4caf50; /* 녹색 테두리 */
     outline: none;
 }
 
 .contact-form button.btn-submit {
     width: 100%;
-    padding: 10px;
-    background-color: #81c784; /* 연한 초록색 */
+    padding: 15px;
+    background-color: #4caf50; /* 초록색 버튼 */
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -45,21 +67,26 @@
 }
 
 .contact-form button.btn-submit:hover {
-    background-color: #4caf50; /* 진한 초록색 */
+    background-color: #388e3c; /* hover 시 더 진한 초록색 */
 }
 
+/* 아이콘 스타일 */
 .contact-form i {
     margin-right: 8px;
-    color: #4dd0e1;
+    color: #4caf50;
 }
 
-/* 반응형 스타일 */
+/* 반응형 디자인 */
 @media (max-width: 768px) {
     .contact-form {
-        padding: 15px;
+        padding: 20px;
     }
 
-    .contact-form label {
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
         font-size: 1rem;
     }
 
@@ -71,37 +98,4 @@
     .contact-form button.btn-submit {
         font-size: 1rem;
     }
-}
-
-/* 드롭다운 메뉴 스타일 */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content li {
-    padding: 12px 16px;
-}
-
-.dropdown-content li a {
-    color: #000;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content li a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }

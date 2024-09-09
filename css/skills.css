@@ -42,17 +42,6 @@
     border-radius: 5px;
 }
 
-/* 반응형 디자인 */
-@media (max-width: 768px) {
-    .skill-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .skill-card {
-        width: 100%;
-    }
-}
 
 /* 드롭다운 메뉴 스타일 */
 .dropdown {
@@ -85,4 +74,16 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .skill-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
 }

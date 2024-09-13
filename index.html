@@ -1,81 +1,87 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<!-- 웹 사이트 설정 -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Questionalist</title>
+    <meta name="description" content="디지털 노마드와 프리랜서 프로그래머를 꿈꾸며, 코스피 정보와 IT 기술을 다루는 웹사이트. 카카오톡, 네이버, 구글 메일을 통해 연락 가능합니다.">
+    <meta name="keywords" content="디지털 노마드, 프리랜서 프로그래머, 코스피 정보, IT 기술, 카카오톡 연락, 구글 메일, 네이버 메일">
+    <title>Questionalist - 디지털 노마드의 여정</title>
     <link rel="icon" href="image/my_logo.jpg" type="image/png">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <!-- header -->
     <header>
-        <h1>
-            <a href="index.html">
-                <img src="image/my_logo.jpg" alt="" width="5%">
-            </a>
-        </h1>
-        <nav>
+        <div id="logo">
+            <img src="../HTML/image/my_logo.jpg" alt="Questionalist 로고" width="100%">
+        </div>
+        <div id="nav">
             <ul>
-                <li><a href="index.html">홈</a></li>
-                <li><a href="html/Build_html/about.html">소개</a></li>
-                <li><a href="html/Build_html/contact.html">연락처</a></li>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#contact">연락</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
     <!-- main -->
     <main>
-        <section id="home" class="hero">
-            <h2>나의 꿈과 목표</h2>
-            <p>
-                안녕하세요! 저는 디지털 노마드를 꿈꾸며, 세상을 이곳저곳 여행하고 싶습니다. 
-                현재 저는 편의점 물류센터에서 근무하고 있지만, 그 안에서 꾸준히 꿈을 이루기 위한 노력을 하고 있습니다.
-                저의 가장 큰 꿈은 프리랜서 프로그래머로서, 어느 장소에서든 자유롭게 일하며, 
-                다양한 프로젝트에 참여하는 것입니다. 이 사이트는 저의 포트폴리오와 함께 자기소개서, 
-                이력서로 활용되며, 저의 성장과 배움을 기록하는 공간입니다.
-            </p>
-            <p>
-                1순위 목표는 프리랜서 프로그래머로서 여러 클라이언트와 협력하여 흥미로운 프로젝트에 기여하고, 
-                세계 곳곳에서 노트북 하나만 있으면 일할 수 있는 환경을 만드는 것입니다. 
-                2순위 목표는 더 안정적인 커리어를 위해 정규직 프로그래머로 일하면서 기술적 성장을 지속하는 것입니다.
-                저의 현재 위치와 상관없이 꿈을 향해 한 걸음씩 나아가고 있습니다.
-            </p>
-            <p>
-                현재 저는 코스피(KOSPI) 페이지를 제작하고 있으며, 이 작업을 통해 금융 데이터와 웹 기술을 접목하는 방법을 배우고 있습니다. 
-                이를 통해 더 나은 데이터를 시각적으로 표현하는 기술을 연습하고 있으며, 사용자 친화적인 웹사이트를 구축하기 위한 노력을 기울이고 있습니다.
-                또한, 작은 세미 프로젝트들을 진행하고 있으며, 이를 통해 더 다양한 기술들을 적용하고 발전시킬 기회를 찾고 있습니다.
-            </p>
-            <p>
-                저는 주로 HTML, CSS, JavaScript를 사용하여 웹사이트를 구축하고 있으며, 
-                Python과 같은 언어로 백엔드 작업도 처리하고 있습니다. 다양한 기술들을 학습하며 
-                실무 경험을 쌓아가고 있으며, 그 과정에서 프로젝트의 효율성과 사용자 경험을 동시에 향상시키는 방법을 탐구하고 있습니다.
-            </p>
-            <p>
-                앞으로 더 많은 프로젝트에 참여하고, 실제로 사람들에게 도움이 되는 서비스를 개발하는 것을 목표로 하고 있습니다. 
-                이 여정에서 여러분의 지지와 관심은 저에게 큰 힘이 됩니다. 
-                제 웹사이트를 방문해주셔서 감사합니다.
-            </p>
-        </section>
+        <div id="left_nav">메뉴</div>
+        <div id="contents">
+            <h2 id="home">디지털 노마드의 여정</h2>
+            <p>저는 디지털 노마드를 꿈꾸며, 국경과 장소에 구애받지 않고 자유롭게 일할 수 있는 삶을 목표로 하고 있습니다. 고정된 사무실이나 정해진 장소에서 벗어나, 어디서나 제 능력을 발휘할 수 있는 환경을 만드는 것이 저의 비전입니다. 이를 통해 다양한 문화와 사람들을 만나고, 경험을 쌓으며 성장하고 싶습니다.</p>
+
+            <h3 id="about">소개</h3>
+            <p>현재 저의 1순위 목표는 프리랜서 프로그래머가 되는 것입니다. 다양한 프로젝트를 수주하고 일정을 조율하며, 여러 클라이언트와 협업하는 방식으로 유연한 근무 환경을 구축하는 것을 꿈꾸고 있습니다. 원하는 시간과 장소에서 일하는 라이프스타일을 통해 저만의 업무 방식을 만들고자 합니다.</p>
+
+            <p>최근 저는 코스피 관련 정보 사이트를 제작 중입니다. 이 사이트는 약 800개 기업을 WICS 분류 및 계열사별로 정리하여 투자자들이 효율적으로 정보를 탐색할 수 있도록 설계하고 있습니다. 이 작업은 데이터를 체계적으로 분류하고 시각화하는 데 중점을 두고 있으며, 현재 개발이 순조롭게 진행 중입니다.</p>
+
+            <h3>프로젝트</h3>
+            <div id="project-cards">
+                <!-- 첫 번째 프로젝트 카드 -->
+                 <div class="card">
+                    <div class="card-content">
+                        <h4>MP4 to MP3 변환기</h4>
+                        <p>MP4 파일을 MP3로 변환하고, 분할한 후 STT로 텍스트 변환.</p>
+                        <a href="https://github.com/your-username/mp4-to-mp3" target="_blank" class="card-link">GitHub</a>
+                        <a href="https://yourwebsite.com/mp4-to-mp3-details" target="_blank" class="card-link">사이트에서 확인</a>
+                    </div>
+                </div>
+                
+                <!-- 두 번째 프로젝트 카드 -->
+                 <div class="card">
+                    <div class="card-content">
+                        <h4>코스피 정보 사이트</h4>
+                        <p>코스피 관련 기업 데이터를 WICS 분류로 정리한 정보 사이트.</p>
+                        <a href="https://github.com/your-username/kospi-info" target="_blank" class="card-link">GitHub</a>
+                        <a href="https://yourwebsite.com/kospi-info-details" target="_blank" class="card-link">사이트에서 확인</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3>연락처</h3>
+            <p>카카오톡, 네이버 메일, 구글 메일을 통해 언제든지 연락이 가능합니다.</p>
+        </div>
     </main>
 
     <!-- footer -->
     <footer>
-        <p>
-            &copy; 2024 Questionalist. 모든 권리 보유.<br>
-            <img src="image/naver_logo.png" alt="Naver" width="20px"> 이메일: <a href="mailto:example@naver.com">example@naver.com</a><br>
-            <img src="image/google_logo.png" alt="Google" width="20px"> 이메일: <a href="mailto:example@gmail.com">example@gmail.com</a><br>
-            <img src="image/kakaotalk_logo.png" alt="KakaoTalk" width="20px"> 카카오톡: <a href="https://open.kakao.com/o/example">오픈 채팅방</a><br>
-            <a href="https://github.com/whitecrowclown/my-profile-by-html">GitHub</a><br>
-            농협 352-0962-9263-33 신성민<br>
-            당신의 후원으로 제 웹 사이트가 더 빨리 커지도록 만들 수 있습니다.
-        </p>
+        <div id="contact">
+            <a href="https://open.kakao.com/o/your_open_chat_link" target="_blank">
+                <img src="kakao.jpeg" alt="KakaoTalk" width="50px">
+            </a>
+            <a href="mailto:ssm0460@naver.com">
+                <img src="naver.jpeg" alt="Naver Mail" width="50px">
+            </a>
+            <a href="mailto:ssmman0121@gmail.com">
+                <img src="gmail.jpeg" alt="Google Mail" width="50px">
+            </a>
+        </div>
+        <div id="account">후원</div>
     </footer>
-
 </body>
+
 </html>

@@ -8,7 +8,6 @@
     <title>연락처</title>
     <link rel="icon" href="../image/my_logo.jpg" type="image/png" />
     <link rel="stylesheet" href="../../css/index.css" />
-    <link rel="stylesheet" href="../../css/contact.css" />
     <script src="../../js/common.js"></script>
     <!-- Google Analytics tracking code -->
     <script
@@ -29,16 +28,26 @@
   <body>
     <!-- header -->
     <header>
-      <a href="../../index.html">
-        <img src="../../image/my_logo.jpg" alt="" width="5%" />
-      </a>
-      <nav>
+      <div id="logo">
+        <img
+          src="../../image/my_logo.jpg"
+          alt="Questionalist 로고"
+          width="100%"
+        />
+      </div>
+      <div id="nav">
         <ul>
-          <li><a href="../../index.html">홈</a></li>
-          <li><a href="about.html">소개</a></li>
-          <li><a href="contact.html">연락처</a></li>
+          <a href="../../index.html">
+            <li>홈</li>
+          </a>
+          <a href="../../html/Build_html/about.html">
+            <li>소개</li>
+          </a>
+          <a href="../../html/Build_html/contact.html">
+            <li>연락</li>
+          </a>
         </ul>
-      </nav>
+      </div>
     </header>
 
     <!-- main -->
@@ -64,11 +73,18 @@
 
     <!-- footer -->
     <footer>
-      <p>
-        &copy; 2024 Questionalist. 모든 권리 보유.<br />
-        농협 352-0962-9263-33 신성민<br />
-        당신의 후원으로 제 웹 사이트가 더 빨리 커지도록 만들수 있습니다.
-      </p>
+      <div id="contact">
+        <a href="https://open.kakao.com/o/your_open_chat_link" target="_blank">
+          <img src="image/Kakao.jpeg" alt="KakaoTalk" width="50px" />
+        </a>
+        <a href="mailto:ssm0460@naver.com">
+          <img src="image/naver.jpeg" alt="Naver Mail" width="50px" />
+        </a>
+        <a href="mailto:ssmman0121@gmail.com">
+          <img src="image/gmail.jpeg" alt="Google Mail" width="50px" />
+        </a>
+      </div>
+      <div id="account">Nh 농협 352-0962-9263-33 신성민</div>
     </footer>
   </body>
 </html>

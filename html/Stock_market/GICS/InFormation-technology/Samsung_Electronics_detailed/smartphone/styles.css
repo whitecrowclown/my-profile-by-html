@@ -9,7 +9,32 @@ body {
   background: linear-gradient(to bottom, skyblue, white);
   background-size: cover;
   color: #333;
+}
+
+main {
+  display: flex;
+  padding: 20px; /* 메인 콘텐츠에만 패딩 적용 */
+}
+
+#contents {
   padding: 20px;
+  /* 추가적인 스타일 */
+}
+
+header {
+  display: flex;
+  background: linear-gradient(to right, deepskyblue, lightblue);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* 패딩 없음 */
+}
+
+footer {
+  height: 10vh;
+  text-align: center;
+  background-color: skyblue;
+  color: white;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+  /* 패딩 없음 */
 }
 
 /* 테이블 기본 스타일 */
@@ -111,4 +136,13 @@ td a {
 td a:hover {
   background-color: rgba(0, 191, 255, 0.2); /* hover 시 배경색 */
   color: black; /* hover 시 텍스트 색상 */
+}
+
+#scroll-container {
+  width: 100%; /* 컨테이너 너비 */
+  overflow-x: auto; /* 수평 스크롤 바는 필요 없으면 숨기기 */
+  border: 1px solid #ddd; /* 테두리로 컨테이너 구분 */
+  background-color: white; /* 배경색 설정 */
+  padding: 10px; /* 컨테이너 안쪽 여백 */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
 }

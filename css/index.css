@@ -224,6 +224,8 @@ main #contents p {
   min-height: 250px;
   cursor: pointer;
   border: 2px solid transparent; /* 초기 경계선 */
+  width: 225px;
+  text-align: center;
 }
 
 .card:hover {

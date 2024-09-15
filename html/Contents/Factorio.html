@@ -1,73 +1,86 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<!-- 웹 사이트 설정 -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 웹 사이트 설정 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>팩토리오</title>
-    <link rel="icon" href="../image/my_logo.jpg" type="image/png">
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/courses.css"> <!-- 추가된 스타일시트 -->
-</head>
+    <link rel="icon" href="../image/my_logo.jpg" type="image/png" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/courses.css" />
+    <!-- 추가된 스타일시트 -->
+    <!-- Google Analytics tracking code -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XZFRF94P2N"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<body>
+      gtag("config", "G-XZFRF94P2N");
+    </script>
+  </head>
+
+  <body>
     <!-- header -->
     <header>
-        <a href="../../index.html">
-            <img src="../../image/my_logo.jpg" alt="" width="5%">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../../index.html">홈</a></li>
-                <li><a href="../Build_html/about.html">소개</a></li>
-                <li><a href="../Build_html/contact.html">연락처</a></li>
-            </ul>
-        </nav>
+      <a href="../../index.html">
+        <img src="../../image/my_logo.jpg" alt="" width="5%" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">홈</a></li>
+          <li><a href="../Build_html/about.html">소개</a></li>
+          <li><a href="../Build_html/contact.html">연락처</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- main -->
     <main>
-        <section id="courses">
-            <h2>Factorio 플레이</h2>
-            <p>Factorio를 플레이한 내용입니다.</p>
+      <section id="courses">
+        <h2>Factorio 플레이</h2>
+        <p>Factorio를 플레이한 내용입니다.</p>
 
-            <div class="course-container">
-                <!-- 첫 번째 강의 카드 -->
-                <div class="course-card">
-                    <h3>Factorio 1화</h3>
-                    <p>Factorio 게임을 플레이하는 그 첫 번째 내용입니다.</p>
-                    <a href="https://example.com" target="_blank">YouTube</a>
-                </div>
+        <div class="course-container">
+          <!-- 첫 번째 강의 카드 -->
+          <div class="course-card">
+            <h3>Factorio 1화</h3>
+            <p>Factorio 게임을 플레이하는 그 첫 번째 내용입니다.</p>
+            <a href="https://example.com" target="_blank">YouTube</a>
+          </div>
 
-                <!-- 두 번째 강의 카드 -->
-                <div class="course-card">
-                    <h3>Factorio 2화</h3>
-                    <p>Factorio 게임을 플레이하는 그 두 번째 내용입니다.</p>
-                    <a href="https://example.com" target="_blank">YouTube</a>
-                </div>
+          <!-- 두 번째 강의 카드 -->
+          <div class="course-card">
+            <h3>Factorio 2화</h3>
+            <p>Factorio 게임을 플레이하는 그 두 번째 내용입니다.</p>
+            <a href="https://example.com" target="_blank">YouTube</a>
+          </div>
 
-                <!-- 세 번째 강의 카드 -->
-                <div class="course-card">
-                    <h3>Factorio 3화</h3>
-                    <p>Factorio 게임을 플레이하는 그 세 번째 내용입니다.</p>
-                    <a href="https://example.com" target="_blank">YouTube</a>
-                </div>
+          <!-- 세 번째 강의 카드 -->
+          <div class="course-card">
+            <h3>Factorio 3화</h3>
+            <p>Factorio 게임을 플레이하는 그 세 번째 내용입니다.</p>
+            <a href="https://example.com" target="_blank">YouTube</a>
+          </div>
 
-                <!-- 추가적인 강의 카드 추가 가능 -->
-            </div>
-        </section>
+          <!-- 추가적인 강의 카드 추가 가능 -->
+        </div>
+      </section>
     </main>
 
     <!-- footer -->
     <footer>
-        <p>
-            &copy; 2024 Questionalist. 모든 권리 보유.<br>
-            농협 352-0962-9263-33 신성민<br>
-            당신의 후원으로 제 웹 사이트가 더 빨리 커지도록 만들수 있습니다.
-        </p>
+      <p>
+        &copy; 2024 Questionalist. 모든 권리 보유.<br />
+        농협 352-0962-9263-33 신성민<br />
+        당신의 후원으로 제 웹 사이트가 더 빨리 커지도록 만들수 있습니다.
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>

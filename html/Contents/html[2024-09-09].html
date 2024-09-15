@@ -1,112 +1,154 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<!-- 웹 사이트 설정 -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 웹 사이트 설정 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>웹 사이트 개편</title>
-    <link rel="icon" href="../image/my_logo.jpg" type="image/png">
-    <link rel="stylesheet" href="../css/common.css"> <!-- 공통 CSS -->
-    <link rel="stylesheet" href="../css/article.css"> <!-- 기사 전용 CSS -->
-</head>
+    <link rel="icon" href="../image/my_logo.jpg" type="image/png" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <!-- 공통 CSS -->
+    <link rel="stylesheet" href="../css/article.css" />
+    <!-- 기사 전용 CSS -->
+    <!-- Google Analytics tracking code -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XZFRF94P2N"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<body>
+      gtag("config", "G-XZFRF94P2N");
+    </script>
+  </head>
+
+  <body>
     <!-- header -->
     <header>
-        <a href="../../index.html">
-            <img src="../../image/my_logo.jpg" alt="" width="5%">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../../index.html">홈</a></li>
-                <li><a href="../Build_html/about.html">소개</a></li>
-                <li><a href="../Build_html/contact.html">연락처</a></li>
-            </ul>
-        </nav>
+      <a href="../../index.html">
+        <img src="../../image/my_logo.jpg" alt="" width="5%" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">홈</a></li>
+          <li><a href="../Build_html/about.html">소개</a></li>
+          <li><a href="../Build_html/contact.html">연락처</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- 기사 섹션 -->
     <section class="article-section">
-        <div class="article-container">
-            <h1>웹 사이트 진행 상황</h1>
-            <p class="article-meta">작성자: 질문자 | 작성일: 2024년 09월 09일</p>
+      <div class="article-container">
+        <h1>웹 사이트 진행 상황</h1>
+        <p class="article-meta">작성자: 질문자 | 작성일: 2024년 09월 09일</p>
 
-            <!-- 기사 내용 -->
-             <div class="article-content">
-                <p>
-                    현재 웹 사이트 디자인이 서로 다른 스타일과 레이아웃을 사용하고 있기 때문에, 이를 통일하고 일관성 있는 사용자 경험을 제공하기 위한 작업을 진행하고 있습니다.
-                    특히, 사이트 내의 다양한 콘텐츠와 페이지 레이아웃 간의 불일치를 해소하기 위해 디자인 조정이 필요합니다. 이러한 작업을 통해 사이트의 일관성을 유지하고,
-                    사용자가 각 페이지에서 혼란 없이 탐색할 수 있도록 하는 것이 목표입니다.
-                </p>
-                
-                <p>
-                    사이트를 구조적으로 더 효율적이고 직관적으로 만들기 위해, 웹 표준을 준수한 시멘틱 HTML 구조로 전환하고 있습니다. 이 과정에서 <code>header</code>, <code>nav</code>,
-                    <code>section</code>, <code>article</code>, <code>footer</code> 같은 시멘틱 태그들을 사용하여 각 요소가 제 역할을 하도록 설계하고 있습니다. 시멘틱 HTML은
-                    웹 접근성을 개선하고 SEO에도 긍정적인 영향을 미칠 수 있으며, 유지보수 또한 용이하게 해줍니다.
-                </p>
+        <!-- 기사 내용 -->
+        <div class="article-content">
+          <p>
+            현재 웹 사이트 디자인이 서로 다른 스타일과 레이아웃을 사용하고 있기
+            때문에, 이를 통일하고 일관성 있는 사용자 경험을 제공하기 위한 작업을
+            진행하고 있습니다. 특히, 사이트 내의 다양한 콘텐츠와 페이지 레이아웃
+            간의 불일치를 해소하기 위해 디자인 조정이 필요합니다. 이러한 작업을
+            통해 사이트의 일관성을 유지하고, 사용자가 각 페이지에서 혼란 없이
+            탐색할 수 있도록 하는 것이 목표입니다.
+          </p>
 
-                <div style="text-align: center;">
-                    <img src="../image/active_html.jpeg" alt="" width="40%">
-                </div>
-                
-                <p>
-                    디자인 요소를 조정하는 과정에서, 전체적인 틀은 기존 디자인을 유지하되, 다양한 페이지의 사이즈 조절 및 레이아웃 구성을 개선하고 있습니다.
-                    특히, 반응형 디자인을 도입하여 다양한 화면 크기와 장치에서 일관된 사용자 경험을 제공하려 합니다. 이를 통해 모바일, 태블릿, 데스크탑에서 모두 사용자가 편리하게
-                    사이트를 이용할 수 있도록 하며, 각 요소가 제대로 보이고, 사용성이 유지될 수 있도록 조정하고 있습니다.
-                </p>
-                
-                <p>
-                    특히, 태그를 활용하여 웹 페이지의 각 파트를 구조화하고, 콘텐츠 간의 명확한 분리 및 정렬을 통해 사용자에게 더 직관적인 정보를 제공하고자 합니다.
-                    GPT에서 받은 코드를 기반으로 이러한 구조적 설계를 진행하고 있으며, 이를 통해 기존 레이아웃을 전반적으로 재정비하고 있습니다. 이러한 과정에서 중복된
-                    코드나 불필요한 태그를 제거하고, 스타일 시트의 최적화 작업을 함께 진행하고 있습니다.
-                </p>
-                
-                <h2>디자인 수정의 목표와 방향성</h2>
-                
-                <p>
-                    이번 디자인 수정의 주요 목표는 단순히 시각적 요소를 통일하는 데 그치지 않고, 사용자 편의성을 극대화하는 것입니다. 사용자가 사이트 내에서 더 쉽게 탐색할 수 있도록
-                    UI(User Interface) 및 UX(User Experience)를 개선하는 데 중점을 두고 있습니다. 모바일과 데스크탑 환경에서 모두 사용하기 편리한 디자인을 제공하는 것이 핵심이며,
-                    이를 위해 폰트 크기, 버튼 크기, 요소 간 간격 등의 세부 사항을 세밀하게 조정하고 있습니다.
-                </p>
-                
-                <div style="text-align: center;">
-                    <img src="../image/css_refactor.jpeg" alt="" width="40%">
-                </div>
+          <p>
+            사이트를 구조적으로 더 효율적이고 직관적으로 만들기 위해, 웹 표준을
+            준수한 시멘틱 HTML 구조로 전환하고 있습니다. 이 과정에서
+            <code>header</code>, <code>nav</code>, <code>section</code>,
+            <code>article</code>, <code>footer</code> 같은 시멘틱 태그들을
+            사용하여 각 요소가 제 역할을 하도록 설계하고 있습니다. 시멘틱 HTML은
+            웹 접근성을 개선하고 SEO에도 긍정적인 영향을 미칠 수 있으며,
+            유지보수 또한 용이하게 해줍니다.
+          </p>
 
-                <p>
-                    또한, CSS 파일을 통합하여 중복된 스타일을 결합하고, 불필요한 코드나 에러를 제거하는 과정도 함께 진행 중입니다. CSS 파일이 여러 개로 나누어져 있으면, 유지보수가
-                    어려워질 뿐만 아니라, 서로 다른 부분에서 충돌이 발생할 수 있기 때문에, 이를 하나로 통합하고 최적화하는 작업은 매우 중요합니다. 이 작업을 통해 파일 크기를 줄이고,
-                    사이트의 로딩 속도를 향상시켜 사용자에게 더 나은 경험을 제공할 수 있습니다.
-                </p>
-                
-                <p>
-                    CSS 통합 작업 후에는 중복된 스타일 속성들을 결합하고, 같은 스타일이 여러 파일에서 사용되는 경우 이를 하나의 규칙으로 통합할 예정입니다. 이러한 최적화 작업을 통해
-                    스타일 시트의 가독성을 높이고, 코드 중복을 최소화함으로써 유지보수를 더 쉽게 할 수 있습니다. 또한, CSS 오류나 불필요한 코드를 발견하여 제거함으로써
-                    사이트가 보다 안정적으로 작동할 수 있도록 개선하고 있습니다.
-                </p>
-                
-                <blockquote>
-                    “모든 디바이스에서 최적화된 경험을 제공하기 위해 반응형 디자인을 적용하고 있습니다. 이는 사용자 만족도를 크게 높일 것입니다.” - 웹 디자인 전문가
-                </blockquote>
-                
-                <p>
-                    앞으로도 이러한 디자인 및 구조적 개선 작업을 통해 사이트의 유지보수성과 사용자 경험을 지속적으로 향상시킬 계획입니다. 다양한 피드백을 반영하여
-                    사용자 중심의 최적화된 웹사이트로 발전시켜 나갈 것입니다.
-                </p>
-            </div>
+          <div style="text-align: center">
+            <img src="../image/active_html.jpeg" alt="" width="40%" />
+          </div>
+
+          <p>
+            디자인 요소를 조정하는 과정에서, 전체적인 틀은 기존 디자인을
+            유지하되, 다양한 페이지의 사이즈 조절 및 레이아웃 구성을 개선하고
+            있습니다. 특히, 반응형 디자인을 도입하여 다양한 화면 크기와 장치에서
+            일관된 사용자 경험을 제공하려 합니다. 이를 통해 모바일, 태블릿,
+            데스크탑에서 모두 사용자가 편리하게 사이트를 이용할 수 있도록 하며,
+            각 요소가 제대로 보이고, 사용성이 유지될 수 있도록 조정하고
+            있습니다.
+          </p>
+
+          <p>
+            특히, 태그를 활용하여 웹 페이지의 각 파트를 구조화하고, 콘텐츠 간의
+            명확한 분리 및 정렬을 통해 사용자에게 더 직관적인 정보를 제공하고자
+            합니다. GPT에서 받은 코드를 기반으로 이러한 구조적 설계를 진행하고
+            있으며, 이를 통해 기존 레이아웃을 전반적으로 재정비하고 있습니다.
+            이러한 과정에서 중복된 코드나 불필요한 태그를 제거하고, 스타일
+            시트의 최적화 작업을 함께 진행하고 있습니다.
+          </p>
+
+          <h2>디자인 수정의 목표와 방향성</h2>
+
+          <p>
+            이번 디자인 수정의 주요 목표는 단순히 시각적 요소를 통일하는 데
+            그치지 않고, 사용자 편의성을 극대화하는 것입니다. 사용자가 사이트
+            내에서 더 쉽게 탐색할 수 있도록 UI(User Interface) 및 UX(User
+            Experience)를 개선하는 데 중점을 두고 있습니다. 모바일과 데스크탑
+            환경에서 모두 사용하기 편리한 디자인을 제공하는 것이 핵심이며, 이를
+            위해 폰트 크기, 버튼 크기, 요소 간 간격 등의 세부 사항을 세밀하게
+            조정하고 있습니다.
+          </p>
+
+          <div style="text-align: center">
+            <img src="../image/css_refactor.jpeg" alt="" width="40%" />
+          </div>
+
+          <p>
+            또한, CSS 파일을 통합하여 중복된 스타일을 결합하고, 불필요한 코드나
+            에러를 제거하는 과정도 함께 진행 중입니다. CSS 파일이 여러 개로
+            나누어져 있으면, 유지보수가 어려워질 뿐만 아니라, 서로 다른 부분에서
+            충돌이 발생할 수 있기 때문에, 이를 하나로 통합하고 최적화하는 작업은
+            매우 중요합니다. 이 작업을 통해 파일 크기를 줄이고, 사이트의 로딩
+            속도를 향상시켜 사용자에게 더 나은 경험을 제공할 수 있습니다.
+          </p>
+
+          <p>
+            CSS 통합 작업 후에는 중복된 스타일 속성들을 결합하고, 같은 스타일이
+            여러 파일에서 사용되는 경우 이를 하나의 규칙으로 통합할 예정입니다.
+            이러한 최적화 작업을 통해 스타일 시트의 가독성을 높이고, 코드 중복을
+            최소화함으로써 유지보수를 더 쉽게 할 수 있습니다. 또한, CSS 오류나
+            불필요한 코드를 발견하여 제거함으로써 사이트가 보다 안정적으로
+            작동할 수 있도록 개선하고 있습니다.
+          </p>
+
+          <blockquote>
+            “모든 디바이스에서 최적화된 경험을 제공하기 위해 반응형 디자인을
+            적용하고 있습니다. 이는 사용자 만족도를 크게 높일 것입니다.” - 웹
+            디자인 전문가
+          </blockquote>
+
+          <p>
+            앞으로도 이러한 디자인 및 구조적 개선 작업을 통해 사이트의
+            유지보수성과 사용자 경험을 지속적으로 향상시킬 계획입니다. 다양한
+            피드백을 반영하여 사용자 중심의 최적화된 웹사이트로 발전시켜 나갈
+            것입니다.
+          </p>
         </div>
+      </div>
     </section>
 
     <!-- footer -->
     <footer>
-        <p>
-            &copy; 2024 Questionalist. 모든 권리 보유.<br>
-            농협 352-0962-9263-33 신성민<br>
-            당신의 후원으로 제 웹 사이트가 더 빨리 커지도록 만들수 있습니다.
-        </p>
+      <p>
+        &copy; 2024 Questionalist. 모든 권리 보유.<br />
+        농협 352-0962-9263-33 신성민<br />
+        당신의 후원으로 제 웹 사이트가 더 빨리 커지도록 만들수 있습니다.
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>

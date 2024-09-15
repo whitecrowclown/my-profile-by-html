@@ -246,8 +246,9 @@ main #contents p {
 }
 
 .card-content {
-  padding: 15px;
+  padding: 20px;
   text-align: center;
+  white-space: normal; /* 텍스트가 길면 줄바꿈 허용 */
 }
 
 .card h4 {

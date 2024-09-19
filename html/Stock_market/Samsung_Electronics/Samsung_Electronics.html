@@ -3,59 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="삼성전자, 사업, 재무 정보, 기술" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="삼성전자의 주요 사업 부문과 재무 정보를 확인하세요."
+      content="코스피 상장사에 대한 정보, 코스피 기업들의 분석과 재무제표, GICS 산업 구조에 따른 분류 및 다트에서 가져온 재무 데이터를 시각적으로 표현한 웹사이트."
     />
-    <title>삼성전자 - 공식 웹사이트</title>
+    <meta
+      name="keywords"
+      content="코스피 상장사, 코스피 기업 분석, GICS 산업 구조, 다트 재무제표, 코스피 기업 정보"
+    />
+    <title>Questionalist - 코스피 상장사 정보</title>
+    <link rel="icon" href="./../../../image/my_logo.jpg" type="image/png" />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
+
   <body>
-    <header>
-      <div id="logo">
-        <a href="index.html"
-          ><img src="assets/images/Samsung_logo.jpeg" alt="삼성전자 로고" />
-        </a>
-      </div>
+    <!-- 세미 네비 (간소화된 네비게이션) -->
+    <nav>
+      <ul id="semi-nav">
+        <li><a href="#intro">삼성전자 소개</a></li>
+        <li><a href="#major-business">주요 사업 부문</a></li>
+      </ul>
+    </nav>
 
-      <!-- 사업 부문과 재무 정보를 구분한 네비게이션 -->
-      <nav>
-        <ul id="business-nav">
-          <li>
-            <a href="#">사업 부문</a>
-            <ul class="dropdown-content">
-              <li><a href="dx_division/dx_overview.html">DX 부문</a></li>
-              <li><a href="ds_division/ds_overview.html">DS 부문</a></li>
-              <li><a href="sdc/sdc_overview.html">SDC</a></li>
-              <li><a href="harman/harman_overview.html">Harman</a></li>
-            </ul>
-          </li>
-        </ul>
-
-        <ul id="financial-nav">
-          <li>
-            <a href="#">재무 정보</a>
-            <ul class="dropdown-content">
-              <li><a href="financial/financial_overview.html">재무 정보</a></li>
-              <li>
-                <a href="sales_analysis/sales_analysis.html">매출 분석</a>
-              </li>
-              <li><a href="credit_rating/credit_rating.html">신용 등급</a></li>
-              <li><a href="stock_info/stock_info.html">주식 정보</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
+    <!-- main -->
     <main>
-      <!-- 인트로 섹션 -->
+      <!-- 삼성전자 - 세미 페이지 -->
       <section id="intro">
         <h1>삼성전자에 오신 것을 환영합니다</h1>
 
         <!-- 서론 -->
-        <!-- 삼성전자의 역사와 성장을 간략하게 설명 -->
         <p>
           삼성전자는 1969년에 설립된 이래, 전 세계적으로 인정받는 글로벌 전자
           기업으로 자리 잡았습니다. 그동안 반도체, 가전제품, 모바일 기기 등을
@@ -76,7 +53,6 @@
         </p>
 
         <!-- 중론 -->
-        <!-- 삼성전자의 현재 주요 사업 부문 및 글로벌 영향력 강조 -->
         <p>
           삼성전자는 21세기 들어 기술 혁신을 통해 소비자 전자 제품 시장의 리더로
           자리 잡았습니다. 특히, 스마트폰 시장에서는 갤럭시 시리즈를 통해 매년
@@ -96,15 +72,8 @@
           화질과 내구성을 자랑합니다. 삼성디스플레이는 혁신적인 기술력으로
           다양한 산업에서 새로운 기회를 창출하고 있습니다.
         </p>
-        <p>
-          삼성전자는 또한 인공지능(AI), 5G 통신 기술, 사물인터넷(IoT) 등 차세대
-          기술에도 대규모 투자를 아끼지 않으며, 미래를 위한 새로운 시장 개척에
-          앞장서고 있습니다. 이러한 노력은 글로벌 경제와 기술 발전에 중요한
-          기여를 하고 있습니다.
-        </p>
 
         <!-- 본론 -->
-        <!-- 삼성전자의 미래 전망과 지속 가능한 경영 전략 설명 -->
         <p>
           앞으로도 삼성전자는 지속 가능한 혁신을 통해 더 나은 미래를 만들기 위한
           노력을 지속할 것입니다. 전 세계적으로 급변하는 기술 환경 속에서,
@@ -112,25 +81,18 @@
           책임을 다하고 있습니다.
         </p>
         <p>
-          특히, 삼성전자는 재생 에너지원의 사용을 늘리고, 전 세계 공장에서
-          에너지 효율성을 높이기 위한 다양한 프로그램을 운영 중입니다. 이러한
-          노력은 글로벌 환경 보호와 지속 가능한 성장을 동시에 달성하려는
-          삼성전자의 핵심 전략 중 하나입니다.
+          삼성전자는 재생 에너지원의 사용을 늘리고, 전 세계 공장에서 에너지
+          효율성을 높이기 위한 다양한 프로그램을 운영 중입니다. 이러한 노력은
+          글로벌 환경 보호와 지속 가능한 성장을 동시에 달성하려는 삼성전자의
+          핵심 전략 중 하나입니다.
         </p>
         <p>
-          또한, 삼성전자는 인공지능, 자율주행, 헬스케어 등 미래 산업에서 새로운
-          기회를 창출하고 있으며, 이를 통해 글로벌 기술 리더로서의 입지를 더욱
-          강화할 계획입니다. 이를 위해 지속적인 연구개발(R&D)과 인재 양성에
-          투자하고 있습니다.
-        </p>
-        <p>
-          삼성전자는 앞으로도 기술을 통해 더 나은 사회를 만들어나가고, 모든
-          사람들이 보다 편리하고 풍요로운 삶을 영위할 수 있도록 노력할 것입니다.
-          이러한 비전은 삼성전자의 지속 가능한 성장의 원동력이 될 것입니다.
+          삼성전자는 인공지능, 자율주행, 헬스케어 등 미래 산업에서 새로운 기회를
+          창출하고 있으며, 이를 통해 글로벌 기술 리더로서의 입지를 더욱 강화할
+          계획입니다.
         </p>
       </section>
 
-      <!-- 주요 사업 부문 카드 섹션 -->
       <section id="major-business">
         <h2>주요 사업 부문</h2>
         <div class="card-container">
@@ -190,8 +152,20 @@
       </section>
     </main>
 
+    <!-- footer -->
     <footer>
-      <p>&copy; 2023 삼성전자. 모든 권리 보유.</p>
+      <div id="contact">
+        <a href="https://open.kakao.com/o/your_open_chat_link" target="_blank">
+          <img src="../../../image/Kakao.jpeg" alt="KakaoTalk" width="50px" />
+        </a>
+        <a href="mailto:ssm0460@naver.com">
+          <img src="../../../image/naver.jpeg" alt="Naver Mail" width="50px" />
+        </a>
+        <a href="mailto:ssmman0121@gmail.com">
+          <img src="../../../image/gmail.jpeg" alt="Google Mail" width="50px" />
+        </a>
+      </div>
+      <div id="account">Nh 농협 352-0962-9263-33 신성민</div>
     </footer>
   </body>
 </html>

@@ -1,0 +1,327 @@
+/* 기본 설정 */
+body {
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #e0f7fa,
+    white
+  ); /* 하늘색 그라데이션 */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 헤더 스타일 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(
+    to right,
+    #0288d1,
+    #03a9f4
+  ); /* 파란색 그라데이션 */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header #logo img {
+  width: 50px;
+}
+
+/* 네비게이션 스타일 */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* 사업 부문과 재무 정보 네비게이션을 분리 */
+#business-nav,
+#financial-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#business-nav li,
+#financial-nav li {
+  position: relative;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #0288d1; /* 기본 배경색 */
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+#business-nav li:hover,
+#financial-nav li:hover {
+  background-color: white;
+  color: #0288d1;
+}
+
+/* 드롭다운 메뉴 스타일 */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  padding: 0;
+  width: 180px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+#business-nav li:hover .dropdown-content,
+#financial-nav li:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-content li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-content li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li:hover {
+  background-color: #0288d1;
+  color: white;
+}
+
+/* 메인 콘텐츠 스타일 */
+main {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* 섹션 스타일 */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  color: #01579b; /* 진한 파란색 */
+}
+
+p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* 카드 컨테이너 스타일 */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+/* 카드 스타일 */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #01579b;
+}
+
+.card p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.card-link {
+  display: block;
+  padding: 10px;
+  background-color: #0288d1;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card-link:hover {
+  background-color: #01579b;
+}
+
+/* 푸터 스타일 */
+footer {
+  background-color: #0288d1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* 가로 스크롤 컨테이너 */
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto; /* 가로 스크롤 가능하게 설정 */
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+  height: 10px; /* 가로 스크롤바 높이 */
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #0288d1;
+  border-radius: 10px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 250px; /* 최소 너비 지정 */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 전체 페이지 크기가 화면을 넘지 않도록 조정 */
+body {
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(to bottom, #e0f7fa, white);
+  color: #333;
+  margin: 0;
+  overflow-x: hidden; /* 페이지가 화면을 넘지 않도록 설정 */
+}
+
+main {
+  padding: 20px;
+  max-width: 100%; /* 전체 페이지가 화면을 넘지 않도록 설정 */
+  box-sizing: border-box;
+}
+
+/* 가로 스크롤 카드 섹션 */
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px 0;
+  max-width: 100%; /* 부모 요소의 크기를 넘지 않도록 설정 */
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+  height: 8px; /* 스크롤바 높이 조정 */
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #0288d1;
+  border-radius: 10px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 250px;
+  max-width: 250px; /* 카드 크기를 고정하여 스크롤이 원활하게 작동하도록 설정 */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-link {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #0288d1;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card-link:hover {
+  background-color: #01579b;
+}
